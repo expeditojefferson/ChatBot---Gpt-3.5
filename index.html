@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Chad</title>
+  <style>
+  .c-loader {
+    animation: is-rotating .8s infinite linear;
+    border: 6px solid #777c86;
+    border-radius: 50%;
+    border-top-color: #324eff;
+    height: 50px;
+    width: 50px;
+  }
+
+  #main::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes is-rotating {
+    to {  transform: rotate(1turn); }
+  }
+
+
+  </style>
+</head>
+<body class="bg-black">
+
+
+
+  <main class="max-w-[800px] h-[100vh] mx-auto flex flex-col">
+
+    <section class="min-h-[128px] bg-black flex justify-start items-center gap-3 px-4">
+      <div class="w-[48px] h-[48px] rounded-full bg-slate-600 text-gray-400">
+        <img src="" alt="">
+      </div>
+      <h1 class="text-xl text-gray-400">Ai Assintente (Beta)</h1>
+    </section>
+
+    <section class="bg-black flex-1 flex flex-col gap-3 px-4 overflow-y-scroll" id="main">
+
+      
+
+    </section>
+
+    <!--Footer-->
+    <section class="bg-black text-white min-h-[128px] flex justify-center items-center p-2">
+      <div class="flex gap-2 w-full">
+        <input type="text" placeholder="Digite sua pergunta" class="p-4 bg-[#364156] placeholder-gray-500 flex-1 rounded outline-none" id="caixa-txt" onkeydown="SendWithEnter(event)">
+        <button class="flex justify-center items-center p-4 bg-[#324eff] rounded cursor-pointer" id="btn-enviar" onclick="sendMenssage()">
+          <i class="fa fa-paper-plane-o " aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+  <script src="index.js">
+  </script>
+</body>
+</html>
